@@ -50,6 +50,7 @@ body {
   text-decoration: none;
   color: var(--firstFontColor);
 }
+.header__link:focus,
 .header__link:hover {
   color: var(--brandColor);
 }
@@ -78,8 +79,10 @@ background-color: var(--mainBG);
   background-color: var(--brandColor);
   color: #fff;
 }
+.head__btn:focus,
 .head__btn:hover {
   background-color: var(--brandHover);
+  cursor: pointer;
 }
 .rows {
 }
@@ -157,9 +160,11 @@ background-color: var(--mainBG);
 .portfolio__btn {
   background-color: #F5F4FA;
 }
+.portfolio__btn:focus,
 .portfolio__btn:hover {
   color: #fff;
   background-color: var(--brandColor);
+  cursor: pointer;
 }
 .portfolio__list {
 }
@@ -210,6 +215,7 @@ background-color: var(--mainBG);
 }
 
 /* в макете не указано есть ли ховер в футере, но это теже контакты с шапки*/
+.footer__link:focus,
 .footer__link:hover {
   color: var(--brandColor);
 }
