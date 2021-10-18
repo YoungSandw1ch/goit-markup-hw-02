@@ -9,3 +9,9 @@
   --heroBG: #2F303A;
   --sectionBG: #F5F4FA;
 }
+
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  color: var(--firstFontColor);
+}
