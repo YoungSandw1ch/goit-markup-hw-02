@@ -1,3 +1,6 @@
+
+/* знаю что нельзя пустые наборы правил оставлять. Но они же для след. ДЗ нужны  */
+
 /*------------------------------------------------root------------------------------------*/
 :root {
   --Raleway: 'Raleway', sans-serif;
@@ -6,7 +9,7 @@
   --brandHover: #188CE8;
   --firstFontColor: #212121;
   --secondFontColor: #757575;
-  --heroBG: #2F303A;
+  --mainBG: #2F303A;
   --sectionBG: #F5F4FA;
 }
 /* --------------------------------------------global------------------------------------*/
@@ -19,10 +22,25 @@ body {
   margin: 0 auto;
 }
 .logo {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--brandColor);
+  
+}
+.logo > span {
+  color:var(--firstFontColor);
 }
 /*---------------------------------------------header------------------------------------*/
 
 .header {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 .header__menu {
 }
@@ -30,12 +48,19 @@ body {
 }
 .header__list {
 }
+.header__link{
+  text-decoration: none;
+  color: var(--firstFontColor);
+}
+.header__link:hover {
+  color: var(--brandColor);
+}
 .header__contact {
 }
-.header__mail {
+.header__contact a {
+  color: var(--secondFontColor);
 }
-.header__tel {
-}
+
 
 /* -------------------------------------------studio-main--------------------------------*/
 
@@ -88,13 +113,20 @@ body {
 
 .portfolio {
 }
-.container {
-}
 .portfolio__btns {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-weight: 500;
 }
 .portfolio__item {
 }
 .portfolio__btn {
+  background-color: #F5F4FA;
+}
+.portfolio__btn:hover {
+  color: #fff;
+  background-color: var(--brandColor);
 }
 .portfolio__list {
 }
@@ -105,23 +137,46 @@ body {
 .portfolio__text {
 }
 .portfolio__label {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: bold;
 }
 .portfolio__type {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondFontColor);
 }
 
 /*---------------------------------------------footer------------------------------------*/
 
 .footer {
+  background-color: var(--mainBG);
 }
 .footer__logo {
+}
+.footer__logo > span {
+  color: #fff;
 }
 .footer__address {
 }
 .footer__list {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.03em;
 }
 .footer__map {
+  text-decoration: none;
+  color: #fff;
 }
-.footer__mail {
+.footer__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }
-.footer__tel {
+
+/* в макете не указано есть ли ховер в футере, но это теже контакты с шапки*/
+.footer__link:hover {
+  color: var(--brandColor);
 }
