@@ -1,4 +1,4 @@
-
+/*------------------------------------------------root------------------------------------*/
 :root {
   --Raleway: 'Raleway', sans-serif;
   --Roboto: 'Roboto', sans-serif;
@@ -9,9 +9,119 @@
   --heroBG: #2F303A;
   --sectionBG: #F5F4FA;
 }
-
-
+/* --------------------------------------------global------------------------------------*/
 body {
   font-family: Roboto, Arial, sans-serif;
   color: var(--firstFontColor);
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+}
+/*---------------------------------------------header------------------------------------*/
+
+.header {
+}
+.header__menu {
+}
+.header__logo {
+}
+.header__list {
+}
+.header__contact {
+}
+.header__mail {
+}
+.header__tel {
+}
+
+/* -------------------------------------------studio-main--------------------------------*/
+
+.head {
+}
+.head__title {
+}
+.head__btn {
+}
+.rows {
+}
+.rows__title {
+}
+.rows__list {
+}
+.rows__item {
+}
+.rows__text {
+}
+.jobs {
+}
+.jobs__title {
+}
+.title {
+}
+.jobs__list {
+}
+.jobs__item {
+}
+.jobs__img {
+}
+.team {
+}
+.team__title {
+}
+.team__list {
+}
+.team__item {
+}
+.team__img {
+}
+.team__text {
+}
+.team__name {
+}
+.team__position {
+}
+
+/* -----------------------------------------portfolio-main-------------------------------*/
+
+.portfolio {
+}
+.container {
+}
+.portfolio__btns {
+}
+.portfolio__item {
+}
+.portfolio__btn {
+}
+.portfolio__list {
+}
+.portfolio__card {
+}
+.portfolio__img {
+}
+.portfolio__text {
+}
+.portfolio__label {
+}
+.portfolio__type {
+}
+
+/*---------------------------------------------footer------------------------------------*/
+
+.footer {
+}
+.footer__logo {
+}
+.footer__address {
+}
+.footer__list {
+}
+.footer__map {
+}
+.footer__mail {
+}
+.footer__tel {
 }
