@@ -3,8 +3,6 @@
 
 /*------------------------------------------------root------------------------------------*/
 :root {
-  --Raleway: 'Raleway', sans-serif;
-  --Roboto: 'Roboto', sans-serif;
   --brandColor: #2196F3;
   --brandHover: #188CE8;
   --firstFontColor: #212121;
@@ -65,26 +63,56 @@ body {
 /* -------------------------------------------studio-main--------------------------------*/
 
 .head {
+background-color: var(--mainBG);
 }
 .head__title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 }
 .head__btn {
+  background-color: var(--brandColor);
+  color: #fff;
+}
+.head__btn:hover {
+  background-color: var(--brandHover);
 }
 .rows {
 }
-.rows__title {
-}
+/* этот заголовок нужно сделать невидимым он для семантики */
+.rows__label{}
+
 .rows__list {
 }
 .rows__item {
 }
+.rows__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 .rows__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondFontColor);
 }
 .jobs {
 }
 .jobs__title {
 }
 .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 .jobs__list {
 }
@@ -103,10 +131,15 @@ body {
 .team__img {
 }
 .team__text {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .team__name {
+  font-weight: 500;
 }
 .team__position {
+  color: var(--secondFontColor);
 }
 
 /* -----------------------------------------portfolio-main-------------------------------*/
