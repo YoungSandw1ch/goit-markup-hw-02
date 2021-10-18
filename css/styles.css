@@ -213,8 +213,6 @@ background-color: var(--mainBG);
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-
-/* в макете не указано есть ли ховер в футере, но это теже контакты с шапки*/
 .footer__link:focus,
 .footer__link:hover {
   color: var(--brandColor);
