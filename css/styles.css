@@ -12,15 +12,20 @@
 }
 /* --------------------------------------------global------------------------------------*/
 body {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--firstFontColor);
+}
+ul {
+  list-style: none;
 }
 .container{
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .logo {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -32,6 +37,10 @@ body {
 .logo > span {
   color:var(--firstFontColor);
 }
+.link:focus,
+.link:hover {
+  color: var(--brandColor);
+}
 /*---------------------------------------------header------------------------------------*/
 
 .header {
@@ -40,24 +49,27 @@ body {
   letter-spacing: 0.02em;
   font-weight: 500;
 }
-.header__menu {
+.menu {
 }
-.header__logo {
+.menu__logo {
 }
-.header__list {
+.navigation {
 }
-.header__link{
+.navigation__item{
+}
+.navigation__link{
   text-decoration: none;
   color: var(--firstFontColor);
 }
-.header__link:focus,
-.header__link:hover {
-  color: var(--brandColor);
+.contacts {
 }
-.header__contact {
+.contacts__item{
 }
-.header__contact a {
+.contacts__link {
   color: var(--secondFontColor);
+}
+.current {
+  color:var(--brandColor);
 }
 
 
@@ -147,40 +159,43 @@ background-color: var(--mainBG);
 
 /* -----------------------------------------portfolio-main-------------------------------*/
 
-.portfolio {
+.section {
 }
-.portfolio__btns {
+/* этот заголовок нужно сделать невидимым он для семантики */
+.section__title{
+}
+.filter {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-weight: 500;
 }
-.portfolio__item {
+.filter__item {
 }
-.portfolio__btn {
+.filter__btn {
   background-color: #F5F4FA;
 }
-.portfolio__btn:focus,
-.portfolio__btn:hover {
+.filter__btn:focus,
+.filter__btn:hover {
   color: #fff;
   background-color: var(--brandColor);
   cursor: pointer;
 }
-.portfolio__list {
+.portfolio {
 }
-.portfolio__card {
+.portfolio__item {
 }
 .portfolio__img {
 }
-.portfolio__text {
+.portfolio__box {
 }
-.portfolio__label {
+.portfolio__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   font-weight: bold;
 }
-.portfolio__type {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -212,8 +227,4 @@ background-color: var(--mainBG);
 .footer__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-}
-.footer__link:focus,
-.footer__link:hover {
-  color: var(--brandColor);
 }

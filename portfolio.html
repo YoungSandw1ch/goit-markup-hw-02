@@ -4,110 +4,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>Портфолио</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <nav class="header__menu">
-        <a class="header__logo logo" href="#" target="_blank" rel="noreferrer noopener">Web<span>Studio</span></a>
-        <ul class="header__list">
-          <li><a class="header__link" href="./index.html">Студия</a></li>
-          <li><a class="header__link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="header__link" href="#">Контакты</a></li>
+      <nav class="menu">
+        <a class="menu__logo logo" href="#" target="_blank" rel="noreferrer noopener">Web<span>Studio</span></a>
+        <ul class="navigation">
+          <li class="navigation__item"><a class="navigation__link link" href="./index.html">Студия</a></li>
+          <li class="navigation__item"><a class="navigation__link link current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="header__contact">
-        <li><a class="header__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="header__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts">
+        <li class="contacts__item"><a class="contacts__link link"
+            href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contacts__item"><a class="contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </div>
   </header>
   <main>
-    <section class="portfolio">
+    <section class="section">
       <div class="container">
-        <ul class="portfolio__btns">
-          <li class="portfolio__item"><button class="portfolio__btn" type="button">Все</button></li>
-          <li class="portfolio__item"><button class="portfolio__btn" type="button">Веб-сайты</button></li>
-          <li class="portfolio__item"><button class="portfolio__btn" type="button">Приложения</button></li>
-          <li class="portfolio__item"><button class="portfolio__btn" type="button">Дизайн</button></li>
-          <li class="portfolio__item"><button class="portfolio__btn" type="button">Маркетинг</button></li>
+        <h1 class="section__title">Портфолио</h1>
+        <ul class="filter">
+          <li class="filter__item"><button class="filter__btn" type="button">Все</button></li>
+          <li class="filter__item"><button class="filter__btn" type="button">Веб-сайты</button></li>
+          <li class="filter__item"><button class="filter__btn" type="button">Приложения</button></li>
+          <li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
+          <li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
         </ul>
-        <ul class="portfolio__list">
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-1.jpg" alt="веб сайт технокряк" class="portfolio__img"
+        <ul class="portfolio">
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-1.jpg" alt="веб сайт технокряк"
               width="370" height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Технокряк</h3>
-              <p class="portfolio__type">Веб-сайт</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Технокряк</h2>
+              <p class="portfolio__text">Веб-сайт</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-2.jpg" alt="постер баскетбольных команд" class="portfolio__img"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-2.jpg" alt="постер баскетбольных команд"
               width="370" height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Постер New Orlean vs Golden Star</h3>
-              <p class="portfolio__type">Дизайн</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+              <p class="portfolio__text">Дизайн</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-3.jpg" alt="лого ресторана" class="portfolio__img" width="370"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-3.jpg" alt="лого ресторана" width="370"
               height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Ресторан Seafood</h3>
-              <p class="portfolio__type">Приложение</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Ресторан Seafood</h2>
+              <p class="portfolio__text">Приложение</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-4.jpg" alt="наушники полноразмерные черные"
-              class="portfolio__img" width="370" height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Проект Prime</h3>
-              <p class="portfolio__type">Маркетинг</p>
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-4.jpg"
+              alt="наушники полноразмерные черные" class="portfolio__img" width="370" height="294">
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Проект Prime</h2>
+              <p class="portfolio__text">Маркетинг</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-5.jpg" alt="две коробки" class="portfolio__img" width="370"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-5.jpg" alt="две коробки" width="370"
               height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Проект Boxes</h3>
-              <p class="portfolio__type">Приложение</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Проект Boxes</h2>
+              <p class="portfolio__text">Приложение</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-6.jpg" alt="монитор" class="portfolio__img" width="370"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-6.jpg" alt="монитор" width="370"
               height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Inspiration has no Borders</h3>
-              <p class="portfolio__type">Веб-сайт</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Inspiration has no Borders</h2>
+              <p class="portfolio__text">Веб-сайт</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-7.jpg" alt="открытый журнал" class="portfolio__img" width="370"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-7.jpg" alt="открытый журнал" width="370"
               height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Издание Limited Edition</h3>
-              <p class="portfolio__type">Дизайн</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Издание Limited Edition</h2>
+              <p class="portfolio__text">Дизайн</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-8.jpg" alt="белая бирка" class="portfolio__img" width="370"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-8.jpg" alt="белая бирка" width="370"
               height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Проект LAB</h3>
-              <p class="portfolio__type">Маркетинг</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Проект LAB</h2>
+              <p class="portfolio__text">Маркетинг</p>
             </div>
           </li>
-          <li class="portfolio__card">
-            <img src="./images/portfolio-image/portfolio-9.jpg" alt="печатает на нетбуке" class="portfolio__img"
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./images/portfolio-image/portfolio-9.jpg" alt="печатает на нетбуке"
               width="370" height="294">
-            <div class="portfolio__text">
-              <h3 class="portfolio__label">Growing Business</h3>
-              <p class="portfolio__type">Приложение</p>
+            <div class="portfolio__box">
+              <h2 class="portfolio__title">Growing Business</h2>
+              <p class="portfolio__text">Приложение</p>
             </div>
           </li>
         </ul>
@@ -120,8 +124,8 @@
       <address class="footer__address">
         <ul class="footer__list">
           <li><a class="footer__map" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li><a class="footer__link" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="footer__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li><a class="footer__link link" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="footer__link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
     </div>
