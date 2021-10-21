@@ -14,6 +14,8 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--firstFontColor);
+  font-size: 14px;
+  line-height: 1.2;
 }
 ul {
   list-style: none;
@@ -28,7 +30,6 @@ ul {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--brandColor);
@@ -44,8 +45,6 @@ ul {
 /*---------------------------------------------header------------------------------------*/
 
 .header {
-  font-size: 14px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
   font-weight: 500;
 }
@@ -96,76 +95,71 @@ background-color: var(--mainBG);
   background-color: var(--brandHover);
   cursor: pointer;
 }
-.rows {
+.blocks {
 }
 /* этот заголовок нужно сделать невидимым он для семантики */
-.rows__label{}
+.blocks__title{}
 
-.rows__list {
+.rows {
 }
 .rows__item {
 }
 .rows__title {
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .rows__text {
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondFontColor);
 }
-.jobs {
+.work {
 }
-.jobs__title {
+.work__title {
 }
 .title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
-.jobs__list {
+.jobs {
 }
 .jobs__item {
 }
 .jobs__img {
 }
+.cards {
+}
+.cards__title {
+}
 .team {
-}
-.team__title {
-}
-.team__list {
 }
 .team__item {
 }
 .team__img {
 }
-.team__text {
+.team__box {
   font-size: 16px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.team__name {
+.team__title {
   font-weight: 500;
 }
-.team__position {
+.team__text {
   color: var(--secondFontColor);
 }
 
 /* -----------------------------------------portfolio-main-------------------------------*/
 
 .section {
+  font-size: 16px;
 }
 /* этот заголовок нужно сделать невидимым он для семантики */
 .section__title{
 }
 .filter {
-  font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -193,10 +187,9 @@ background-color: var(--mainBG);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  font-weight: bold;
+  font-weight: 700;
 }
 .portfolio__text {
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondFontColor);
@@ -215,7 +208,6 @@ background-color: var(--mainBG);
 .footer__address {
 }
 .footer__list {
-  font-size: 14px;
   font-style: normal;
   line-height: 2;
   letter-spacing: 0.03em;
